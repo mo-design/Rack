@@ -889,6 +889,8 @@ h6 {
   text-align: center; }
   .responds h2 {
     color: #35476f; }
+  .responds ul {
+    list-style: none; }
 
 .responds .wrapper {
   position: relative; }
@@ -900,8 +902,6 @@ h6 {
   margin: 25px 10px;
   padding: 0;
   text-align: center; }
-  .responds__box .p {
-    color: #35476f; }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .responds__box {
@@ -960,36 +960,29 @@ h6 {
   background: #35476f;
   border-radius: 50%; }
 
-.responds__foto:after {
+.responds__img:after {
   position: absolute;
   top: 216px;
   left: 44px;
-  content: url(../img/stars.png); }
+  z-index: 100;
+  content: url(../img/stars.png);
+  color: red; }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .responds__foto:after {
+  .responds__img:after {
     left: 9px; } }
 
 @media only screen and (min-width: 769px) and (max-width: 980px) {
-  .responds__foto:after {
+  .responds__img:after {
     left: 23px; } }
 
 @media only screen and (min-width: 981px) and (max-width: 1200px) {
-  .responds__foto:after {
+  .responds__img:after {
     left: 59px; } }
 
 @media only screen and (min-width: 1201px) {
-  .responds__foto:after {
+  .responds__img:after {
     left: 95px; } }
-
-.rbox1 .responds__foto {
-  background: url(../img/responds/ava1.jpg); }
-
-.rbox2 .responds__foto {
-  background: url(../img/responds/ava2.jpg); }
-
-.rbox3 .responds__foto {
-  background: url(../img/responds/ava3.jpg); }
 
 .responds__name {
   font: 27px roboto_condensedbold, sans-serif;
