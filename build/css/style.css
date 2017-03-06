@@ -895,17 +895,31 @@ h6 {
 .responds .wrapper {
   position: relative; }
 
+.responds__list {
+  overflow: hidden;
+  height: 390px; }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .responds__list {
+    height: 410px; } }
+
+@media only screen and (min-width: 1201px) {
+  .responds__list {
+    height: 370px; } }
+
 .responds__box {
   float: left;
   position: relative;
   width: 260px;
+  height: 390px;
   margin: 25px 10px;
   padding: 0;
   text-align: center; }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .responds__box {
-    width: 197px; } }
+    width: 197px;
+    height: 410px; } }
 
 @media only screen and (min-width: 769px) and (max-width: 980px) {
   .responds__box {
@@ -917,7 +931,8 @@ h6 {
 
 @media only screen and (min-width: 1201px) {
   .responds__box {
-    width: 367px; } }
+    width: 367px;
+    height: 370px; } }
 
 .responds__nav_l {
   content: url(../img/arrow_l.svg);

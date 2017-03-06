@@ -7,8 +7,8 @@
 	var settings = $.extend({}, defaults, options);
 	
 	var pixelsOffset = 225*options.picStep;
-	var leftUIEl = $('.carousel-arrow-left');
-	var	rightUIEl = $('.carousel-arrow-right');
+	var leftUIEl = $('.responds__nav_l');
+	var	rightUIEl = $('.responds__nav_r');
 	var elementsList = $(this);
     var currentLeftValue = 0;
     var elementsCount = elementsList.find('li').length;
