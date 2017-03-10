@@ -5,7 +5,6 @@
 	background: $color_red;
 	height: 30px;
 
-
 	 ul { 
 	 	display: table; 
 	 	position: relative;
@@ -35,25 +34,18 @@
 @include respond(iphone)  {
 
 
-			.top ul {background: $color_red;}
+	
+	
+			.top li {display: none; float: none; background: $color_red;}
 
-			.top li {display: none; float: none;}
-
-			.top .current {display: table-cell;}
 
 			.top a {
 				display: table-cell;
-				padding: 0 30px;
-			}
-
-			.top .current a {
-				background: $color_red;
-				color: $color_white;
-				padding: 0 30px;
+				padding: 0 20px 0 35px;
 			}
 
 
-			.top .current:before {
+			.top ul:before {
 				position: absolute;
 				top: 8px; left: 5px;
 				content: url(../img/mobil_menu.svg);
@@ -61,7 +53,7 @@
 			}
 
 		
-			.top ul:hover .current:before{content:"";}
+			.top li:hover .top ul:before {content:"";}
 
 			.top ul:hover li {display: block;}
 			

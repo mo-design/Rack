@@ -137,8 +137,6 @@ h3 {
 		color: $color_black;
 		padding: 5px 0 10px;
 		text-align: left;
-
-		span {padding-left: 20px; font: 14px $font_i; color: $color_black;}
 	}
 
 
@@ -183,6 +181,7 @@ h6 {
 	line-height: 1;
 	}
 
+	p {font-weight: bold;}
 
 }
 
@@ -190,10 +189,12 @@ h6 {
 .sizes__a {
 	color: $color_black;
 	text-align: center;
-	font-weight: bold;
-	text-decoration: underline;
+	text-decoration: none;
 
-	&:hover {text-decoration: none;}
+	&:hover { color: $color_yellow;}
+
+
+	span {padding-left: 20px; font: 14px $font_i; color: $color_black;}
 }
 
 
@@ -272,7 +273,6 @@ h6 {
 	width: 150px;
 	height: 150px;
 	margin: 0 auto;
-	background: $color_blue;
 	border-radius: 50%;
 }
 

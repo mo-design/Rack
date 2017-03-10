@@ -471,26 +471,19 @@ template {
       color: #ffe06b; }
 
 @media only screen and (max-width: 480px) {
-  .top ul {
-    background: #610534; }
   .top li {
     display: none;
-    float: none; }
-  .top .current {
-    display: table-cell; }
+    float: none;
+    background: #610534; }
   .top a {
     display: table-cell;
-    padding: 0 30px; }
-  .top .current a {
-    background: #610534;
-    color: #fff;
-    padding: 0 30px; }
-  .top .current:before {
+    padding: 0 20px 0 35px; }
+  .top ul:before {
     position: absolute;
     top: 8px;
     left: 5px;
     content: url(../img/mobil_menu.svg); }
-  .top ul:hover .current:before {
+  .top li:hover .top ul:before {
     content: ""; }
   .top ul:hover li {
     display: block; } }
@@ -818,10 +811,6 @@ h3 {
     color: #1f1d1e;
     padding: 5px 0 10px;
     text-align: left; }
-    .product p span {
-      padding-left: 20px;
-      font: 14px robotoitalic, sans-serif;
-      color: #1f1d1e; }
 
 h6 {
   color: #610534;
@@ -875,13 +864,19 @@ h6 {
   text-align: center;
   line-height: 1; }
 
+.sizes p {
+  font-weight: bold; }
+
 .sizes__a {
   color: #1f1d1e;
   text-align: center;
-  font-weight: bold;
-  text-decoration: underline; }
+  text-decoration: none; }
   .sizes__a:hover {
-    text-decoration: none; }
+    color: #ffe06b; }
+  .sizes__a span {
+    padding-left: 20px;
+    font: 14px robotoitalic, sans-serif;
+    color: #1f1d1e; }
 
 /*  RESPONDS  */
 .responds {
@@ -973,7 +968,6 @@ h6 {
   width: 150px;
   height: 150px;
   margin: 0 auto;
-  background: #35476f;
   border-radius: 50%; }
 
 .responds__img:after {
