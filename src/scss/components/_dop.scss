@@ -1,0 +1,170 @@
+.shema {
+
+	background: $color_blue;
+	padding: 20px 0 30px;
+
+	h2 {color: $color_white;}
+
+
+
+
+}
+
+.shema__box {
+	width: 276px;
+	margin: 0 auto;
+}
+
+
+@include respond(l_iphone){.shema__box {width: 276px;}}
+@include respond(ipad)	  {.shema__box {width: 730px; }}
+@include respond(l_ipad)  {.shema__box{width: 730px; }}
+@include respond(desktop) {.shema__box {width: 1100px;}}
+
+
+
+
+.bardak {
+	padding: 20px 0 10px;
+	background: $color_white;
+}
+
+
+
+.bardak	h4 {
+	color: $color_red; 
+	text-align: center;
+	font: 25px $font_bl;
+	line-height: 1;
+	padding-bottom: 3px;
+
+}
+
+@include respond(l_iphone){.bardak	h4 {font: 35px $font_bl; line-height: 0.9; padding-bottom: 5px; }}
+@include respond(ipad)	  {.bardak	h4 {font: 40px $font_bl; line-height: 0.9; padding-bottom: 5px;}}
+@include respond(l_ipad)  {.bardak	h4 {font: 45px $font_bl; line-height: 0.8; padding-bottom: 10px;}}
+@include respond(desktop) {.bardak	h4 {font: 50px $font_bl; line-height: 0.7; padding-bottom: 15px;}}
+
+
+.bardak p {font: 16px $font; text-align: center;}
+
+@include respond(l_iphone){.bardak p {font: 18px $font;}}
+@include respond(ipad)	  {.bardak p {font: 20px $font;}}
+@include respond(l_ipad)  {.bardak p {font: 22px $font;}}
+@include respond(desktop) {.bardak p {font: 24px $font;}}
+
+
+
+
+.bardak__fon {
+	    background: url(../img/bardak_w1.jpg);
+ 		background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;
+		text-align: center;
+		padding: 0;
+	}
+
+
+@include respond(l_iphone) 	{.bardak__fon {
+		background: url(../img/bardak_w23.jpg);
+		background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;
+		text-align: center;
+		}}
+
+
+@include respond(ipad) 	{.bardak__fon {
+	 background: url(../img/bardak_w23.jpg);
+	 	background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;
+		text-align: center;
+		}}
+
+
+@include respond(l_ipad) 	{.bardak__fon {
+	 background: url(../img/bardak_w45.jpg);
+	 	background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;
+		text-align: center;
+		}}
+
+
+@include respond(desktop) 	{.bardak__fon {
+	 background: url(../img/bardak_w45.jpg);
+	 	background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;
+		text-align: center;
+		}}
+
+
+
+
+.bardak__but {
+	width: 140px;
+	display: inline-block;
+	margin: 250px 0 10px;
+	padding: 3px 0;
+	border-radius: 8px;
+    border: none;
+    background-color: $color_yellow;
+    color: $color_red;
+   	font: 25px $font_cb;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+      
+}
+
+
+
+@include respond(l_iphone) {
+	.bardak__but {
+	width: 160px;
+	margin: 137px 0 180px; 
+	font: 30px $font_cb;
+	}
+}
+
+@include respond(ipad) {
+	.bardak__but {
+	width: 170px;
+	margin: 137px 0 170px; 
+	font: 35px $font_cb;
+	}
+}
+
+@include respond(l_ipad) {
+	.bardak__but {
+	width: 185px;
+	margin: 175px 0 215px; 
+	font: 38px $font_cb;
+	}
+}
+
+@include respond(desktop) {
+	.bardak__but {
+	width: 220px;
+	margin: 175px 0 215px; 
+	font: 43px $font_cb;
+	}
+}
+
+
+
+.bardak__fon h5 {
+	color: $color_red;
+	text-transform: uppercase;
+	text-align: center;
+	font: 16px $font_cb;
+
+}
+
+@include respond(l_iphone) {.bardak__fon h5{font: 25px $font_cb;}}
+@include respond(ipad) {.bardak__fon h5{font: 35px $font_cb;}}
+@include respond(l_ipad) {.bardak__fon h5{font: 35px $font_cb;}}
+@include respond(desktop) {.bardak__fon h5{font: 50px $font_cb;}}

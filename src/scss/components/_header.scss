@@ -1,0 +1,295 @@
+/* top menu */
+
+
+.top {
+	background: $color_red;
+	height: 30px;
+
+
+	 ul { 
+	 	display: table; 
+	 	position: relative;
+	}
+
+	 li {
+		list-style: none;
+		display: none;
+		float: left;
+	}
+
+	.current {display: table-cell;}
+
+
+	a, .current a{
+		padding: 0 10px;
+		text-decoration: none;
+		color: $color_white;
+		font: 12px $font;
+		line-height: 30px;
+
+		&:hover{color: $color_yellow;}
+	}
+
+
+}
+
+@include respond(iphone)  {
+
+
+			.top ul {background: $color_red;}
+
+			.top li {display: none;}
+
+			.top .current {display: table-cell;}
+
+			.top a {
+				display: table-cell;
+				padding: 0 30px;
+			}
+
+			.top .current a {
+				background: $color_red;
+				color: $color_white;
+				padding: 0 30px;
+			}
+
+
+			.top .current:before {
+				position: absolute;
+				top: 8px; left: 5px;
+				content: url(../img/mobil_menu.svg);
+
+			}
+
+		
+			.top ul:hover .current:before{content:"";}
+
+			.top ul:hover li {display: block;}
+			
+}
+
+
+/* main pic*/
+
+.fon {
+	    background: url(../img/fon_w1.jpg);
+ 		background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;
+		text-align: center;
+	}
+
+
+@include respond(l_iphone) 	{
+	.fon {background: url(../img/fon_w2.jpg);
+		background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;}
+	}
+
+@include respond(ipad) 	{
+	.fon {background: url(../img/fon_w3.jpg);
+		background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;}
+	}
+
+@include respond(l_ipad) 	{
+	.fon {background: url(../img/fon_w4.jpg);
+		background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;}
+	}
+
+
+@include respond(desktop) 	{
+	.fon {background: url(../img/fon_w5.jpg);
+		background-repeat: no-repeat;
+		background-size: fixed;
+		background-position: top;}
+	}
+
+
+
+
+
+/* titles */
+
+
+.wrapper {
+	width: 280px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+@include respond(l_iphone) 	{.wrapper {width: 440px;}}
+@include respond(ipad) 		{.wrapper {width: 728px;}}
+@include respond(l_ipad) 	{.wrapper {width: 940px;}}
+@include respond(desktop) 	{.wrapper {width: 1170px;}}
+
+
+
+h4 {
+	color: $color_blue;
+	text-transform: uppercase;
+	font: 21px $font_cb;
+	line-height: 1;
+} 
+
+
+@include respond(l_iphone) {h4{font-size: 28px;}}
+@include respond(ipad)     {h4{font-size: 44px;}}
+@include respond(l_ipad)   {h4{font-size: 41px; padding-top: 5px;}}
+@include respond(desktop)  {h4{font-size: 51px; padding-top: 10px; padding-left: 10px; text-align: left;}}
+
+
+.fon__but {
+	width: 140px;
+	display: inline-block;
+	margin: 130px 0 20px;
+	padding: 3px 0;
+	border-radius: 8px;
+    border: none;
+    background-color: $color_red;
+    color: white;
+   	font: 25px $font_cb;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+      
+}
+
+
+@include respond(l_iphone) {
+	.fon__but {
+	width: 160px;
+	margin: 150px 0 15px; 
+	font: 30px $font_cb;
+	}
+}
+
+@include respond(ipad) {
+	.fon__but {
+	width: 170px;
+	margin: 165px 0 10px; 
+	font: 35px $font_cb;
+	}
+}
+
+@include respond(l_ipad) {
+	.fon__but {
+	width: 185px;
+	margin: 205px 0 35px; 
+	font: 38px $font_cb;
+	}
+}
+
+@include respond(desktop) {
+	.fon__but {
+	width: 220px;
+	margin: 250px 0 40px; 
+	font: 43px $font_cb;
+	}
+}
+
+
+
+
+
+
+h1 {
+	color: $color_blue;
+	text-transform: uppercase;
+	font: 32px $font_bl;
+	line-height: 1;
+	margin: 0;
+} 
+
+@include respond(l_iphone) {
+	h1 {
+		font: 43px $font_bl;
+		text-align: left;
+		line-height: 1;
+	} 
+}
+
+@include respond(ipad) {
+	h1 {
+		font: 59px $font_bl;
+		padding-left: 30px;
+		text-align: left;
+		line-height: 1;
+	} 
+}
+
+
+@include respond(l_ipad) {
+	h1 {
+		font: 48px $font_bl;
+		padding-left: 10px;
+		text-align: left;
+		line-height: 1;
+	} 
+}
+
+@include respond(desktop) {
+	h1 {
+		font: 58px $font_bl;
+		padding-left: 10px;
+		text-align: left;
+		line-height: 1;
+	} 
+}
+
+
+
+
+h5 {
+	color: $color_blue;
+	font: 23px $font_b;
+	line-height: 1;
+	padding-bottom: 5px;
+}
+
+
+
+
+@include respond(l_iphone){
+	h5 {
+		font: 18px $font_b;
+		text-align: left;
+
+	}
+
+}
+
+
+@include respond(ipad) {
+	h5 {
+		font: 30px $font_b;
+		padding-left: 30px;
+		text-align: left;
+
+	}
+}
+
+
+@include respond(l_ipad) {
+	h5 {
+		font: 30px $font_b;
+		padding-left: 10px;
+		text-align: left;
+
+	}
+}
+
+
+@include respond(desktop) {
+	h5 {
+		font: 36px $font_b;
+		padding-left: 10px;
+		text-align: left;
+
+	}
+}

@@ -1,0 +1,46 @@
+@mixin respond($media) {
+  @if $media == iphone {
+    @media only screen and (max-width: $w2) { @content; }
+  }
+  @else if $media == l_iphone {
+    @media only screen and (min-width: $w2 + 1) and (max-width: $w3) { @content; }
+  }
+  @else if $media == ipad {
+    @media only screen and (min-width: $w3 + 1) and (max-width: $w4) { @content; }
+  }
+   @else if $media == l_ipad {
+	@media only screen and (min-width: $w4 + 1) and (max-width: $w5) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $w5 + 1) { @content; }
+  }
+}
+
+
+
+@import 'components/normalize';
+@import 'components/fonts';
+@import 'components/vars';
+@import 'components/header';
+@import 'components/main';
+@import 'components/dop';
+@import 'components/footer';
+
+
+
+
+body {
+	font: 14px $font;	
+}
+
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+

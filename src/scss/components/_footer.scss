@@ -1,0 +1,294 @@
+footer {
+
+	padding: 20px 0 0;
+	background: $color_red;
+	color: $color_white;
+
+
+	a {
+		color: $color_white;
+		text-decoration: none;
+
+		&:hover {color: $color_yellow;}
+	}
+
+}
+
+
+	.gap {
+		padding-top: 20px;
+	}
+
+
+
+.footer__info {
+	position: relative;
+	width: 280px;
+	margin: 0 auto;
+}
+
+@include respond(l_iphone) 	{.footer__info  {width: 440px;}}
+@include respond(ipad) 		{.footer__info  {width: 728px;}}
+@include respond(l_ipad) 	{.footer__info  {width: 940px;}}
+@include respond(desktop) 	{.footer__info  {width: 1170px;}}
+
+
+
+
+
+
+.footer__company {
+	padding: 70px 30px 0;
+	text-align: center;
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 90px;
+		content: url(../img/logo.png);
+	}
+
+}
+
+
+.footer__graf {
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+.footer__contacts {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+
+.footer__nav {
+
+	background: $color_white;
+
+	ul {
+		margin: 0 auto;
+		list-style: none;
+	}
+
+
+
+	li {
+		padding: 10px 30px;
+		text-align: center;
+
+		&:hover {background: $color_yellow;}
+	}
+	
+
+
+	li a {
+		color: $color_red;
+		text-align: center;
+	}
+			
+}
+
+
+
+
+
+
+@include respond(l_iphone) {
+
+
+	.footer__company:before {left: 180px;}
+
+}
+
+
+
+
+
+
+@include respond(ipad) {
+
+	.footer__company {
+		margin-left: 100px;
+		float: right; 
+		width: 200px;
+		padding: 0; 
+		text-align: left; 
+	} 
+
+	.footer__company:before {top: 13px; left: 410px;}
+
+
+
+	.footer__graf {
+		float: right;
+		text-align: left; 
+		padding: 0 60px 0 20px;
+
+
+	}
+
+
+	.footer__contacts {
+		float: left;
+		text-align: left; 
+	 }
+
+
+	.footer__nav {
+		background: $color_white;
+		height: 40px; 
+		padding-bottom: 10px 0;
+	}
+
+	.footer__nav li {
+		float: left; 
+		padding: 10px 34px;
+		background: $color_white;
+
+		&:hover {background: $color_yellow;}
+
+	} 
+
+	.footer__nav li a {color: $color_red;}
+}
+
+
+
+
+@include respond(l_ipad) {
+
+
+	.footer__info {padding: 10px 0;}
+
+
+	.footer__company {
+		float: right; 
+		width: 350px;
+		padding: 0; 
+		text-align: left; 
+	} 
+
+	.footer__company:before {top: 0; left: 470px;}
+
+
+
+	.footer__graf {
+		float: right;
+		text-align: left; 
+		padding: 0 200px 0 20px;
+
+
+	}
+
+
+	.footer__contacts {
+		float: left;
+		text-align: left; 
+	 }
+
+
+	.footer__nav {
+		background: $color_white;
+		height: 40px; 
+		padding-bottom: 10px 0;
+
+		ul {width: 690px; margin: 0 auto;}
+
+	}
+
+
+
+
+
+	.footer__nav li {
+		float: left; 
+		padding: 10px 30px;
+		background: $color_white;
+
+		&:hover {background: $color_yellow;}
+
+	} 
+
+	.footer__nav li a {color: $color_red;}
+
+
+
+}
+
+
+
+
+@include respond(desktop)  { 
+
+	.footer__info {padding: 10px 0;}
+
+
+	.footer__company {
+		float: right; 
+		width: 370px;
+		padding: 0; 
+		text-align: left; 
+	} 
+
+	.footer__company:before {top: 0; left: 670px;}
+
+
+
+	.footer__graf {
+		float: right;
+		text-align: left; 
+		padding: 0 360px 0 20px;
+
+
+	}
+
+
+	.footer__contacts {
+		float: left;
+		text-align: left; 
+	 }
+
+
+	.footer__nav {
+		background: $color_white;
+		height: 40px; 
+		padding-bottom: 10px 0;
+
+		ul {width: 690px; margin: 0 auto;}
+
+	}
+
+
+
+
+
+	.footer__nav li {
+		float: left; 
+		padding: 10px 30px;
+		background: $color_white;
+
+		&:hover {background: $color_yellow;}
+
+	} 
+
+	.footer__nav li a {color: $color_red;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

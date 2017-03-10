@@ -1,0 +1,308 @@
+/* pluses */
+
+	h2 {
+		margin: 10px 0;
+		text-align: center;
+		font: 30px $font_i;		
+	}
+
+
+
+
+.pluses {
+	background: $color_red;
+
+
+	h2 {color: $color_white;}
+
+}
+
+
+.pluses .wrapper {
+	padding: 10px;
+}
+
+.pluses__box {
+	position: relative;
+	width: 260px;
+	margin: 35px 10px; 
+	padding: 0;
+}
+
+
+@include respond(l_iphone){.pluses__box {width: 420px;}}
+@include respond(ipad){.pluses__box {width: 330px; float: left; margin: 25px 10px;}}
+@include respond(l_ipad){.pluses__box {width: 440px; float: left; margin: 25px 10px;}}
+@include respond(desktop){.pluses__box {width: 550px; float: left; margin: 25px 10px;}}
+
+
+h3 {
+	color: $color_white;
+	padding-left: 45px;
+	text-transform: uppercase;
+	font: 20px $font_bl;
+	text-align: left;
+
+}
+
+@include respond(ipad) 	  {.box3, .box4 {height: 180px;}}
+@include respond(l_ipad)  {.box1, .box2 {height: 120px;}  .box5, .box6 {height: 70px; }}
+@include respond(desktop) {.box3, .box4 {height: 115px;}}
+
+
+
+
+
+
+@mixin pluses_before {
+	display:block;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+
+
+.box1 h3:before {
+	content: url(../img/plus1.svg);
+	@include pluses_before;	
+}
+
+
+.box2 h3:before {
+	content: url(../img/plus2.svg);
+	@include pluses_before;	
+}
+
+.box3 h3:before {
+	content: url(../img/plus3.svg);
+	@include pluses_before;	
+}
+
+.box4 h3:before {
+	content: url(../img/plus4.svg);
+	@include pluses_before;	
+}
+
+.box5 h3:before {
+	content: url(../img/plus5.svg);
+	@include pluses_before;	
+}
+
+.box6 h3:before {
+	content: url(../img/plus6.svg);
+	@include pluses_before;	
+}
+
+.box7 h3:before {
+	content: url(../img/plus7.svg);
+	@include pluses_before;	
+}
+
+.box8 h3:before {
+	content: url(../img/plus8.svg);
+	@include pluses_before;	
+}
+
+
+
+
+.pluses p  {
+	display: block;
+	padding-left: 45px;
+	text-align: left;
+	color: $color_white;
+} 
+
+
+.pluses p span {
+	font: 14px $font_b;
+	color: $color_yellow;
+} 
+
+
+
+/* main */
+
+
+
+.product {
+	background: $color_white;
+
+	
+	h2 {color: $color_red;}
+
+
+	p {
+		color: $color_black;
+		padding: 5px 0 10px;
+		text-align: left;
+
+		span {padding-left: 20px; font: 14px $font_i; color: $color_black;}
+	}
+
+
+
+}
+
+
+
+h6 {
+	color: $color_red;
+	font: 18px $font_i;
+	text-align: left;
+}
+
+
+@include respond(ipad)   {  picture {float: left; margin: 5px 20px 0 0; }}
+@include respond(l_ipad) {  picture {float: left; margin: 5px 30px 0 0; }}
+@include respond(desktop){  picture {float: left; margin: 5px 30px 0 0; }}
+
+
+
+
+
+.product__box {
+	width: 260px;
+	margin: 10px; 
+	padding: 0;
+}
+
+
+@include respond(l_iphone){.product__box {width: 360px;}}
+@include respond(ipad){.product__box {width: 330px; float: left; margin: 25px 10px;}}
+@include respond(l_ipad){.product__box {width: 280px; float: left; margin: 25px 10px;}}
+@include respond(desktop){.product__box {width: 350px; float: left; margin: 25px 10px;}}
+
+
+.sizes {
+
+	h6 {
+	color: $color_red;
+	text-align: center;
+	line-height: 1;
+	}
+
+
+}
+
+
+.sizes__a {
+	color: $color_black;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+
+	&:hover {text-decoration: none;}
+}
+
+
+
+
+
+
+/*  RESPONDS  */
+
+
+.responds {
+	background: $color_white;
+	padding-bottom: 20px;
+	text-align: center;
+	h2 {color: $color_blue;}
+
+	ul {list-style: none;}
+
+}
+	
+.responds .wrapper {
+	position: relative;
+}
+
+.responds__list {
+	overflow: hidden;
+	height: 390px;
+
+}
+
+@include respond(l_iphone) {.responds__list {height: 410px;}}
+@include respond(desktop)  {.responds__list {height: 370px;}}
+
+
+.responds__box {
+	float: left;
+	position: relative;
+	width: 260px;
+	height: 390px;
+	margin: 25px 10px; 
+	padding: 0;
+	text-align: center;
+}
+
+
+@include respond(l_iphone){.responds__box {width: 197px; height: 410px;}}
+@include respond(ipad){.responds__box {width: 220px; }}
+@include respond(l_ipad){.responds__box {width: 292px; }}
+@include respond(desktop){.responds__box {width: 367px; height: 370px;}}
+
+
+.responds__nav_l {
+		content: url(../img/arrow_l.svg);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+
+.responds__nav_r {
+		content: url(../img/arrow_r.svg);
+		position: absolute;
+		top: 0;
+		left: 244px;
+	}
+
+
+@include respond(l_iphone){.responds__nav_r {left: 404px; }}
+@include respond(ipad)    {.responds__nav_r {left: 692px; }}
+@include respond(l_ipad)  {.responds__nav_l{top: 70px; } .responds__nav_r {top: 70px; left: 904px; }}
+@include respond(desktop) {.responds__nav_l{top: 70px; } .responds__nav_r {top: 70px; left: 1134px;; }}
+
+
+
+.responds__foto {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	background: $color_blue;
+	border-radius: 50%;
+}
+
+.responds__img:after {
+	position: absolute;
+	top: 216px;
+	left: 44px;
+	z-index: 100;
+	content: url(../img/stars.png);
+	color: red;
+}
+
+
+@include respond(l_iphone){.responds__img:after {left: 9px;}}
+@include respond(ipad){.responds__img:after { left: 23px; }}
+@include respond(l_ipad){.responds__img:after {left: 59px;}}
+@include respond(desktop){.responds__img:after {left: 95px;}}
+
+
+
+
+.responds__name {
+	font: 27px $font_cb;
+	color: $color_blue;
+	line-height: 0.9;
+	padding: 10px 0 2px;
+}
+
+.responds__work {
+	font: 20px $font_i;
+	color: $color_blue;
+	padding-bottom: 40px;
+}
