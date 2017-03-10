@@ -458,7 +458,6 @@ template {
     position: relative; }
   .top li {
     list-style: none;
-    display: none;
     float: left; }
   .top .current {
     display: table-cell; }
@@ -475,7 +474,8 @@ template {
   .top ul {
     background: #610534; }
   .top li {
-    display: none; }
+    display: none;
+    float: none; }
   .top .current {
     display: table-cell; }
   .top a {

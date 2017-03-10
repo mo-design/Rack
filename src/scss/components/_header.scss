@@ -13,7 +13,6 @@
 
 	 li {
 		list-style: none;
-		display: none;
 		float: left;
 	}
 
@@ -38,7 +37,7 @@
 
 			.top ul {background: $color_red;}
 
-			.top li {display: none;}
+			.top li {display: none; float: none;}
 
 			.top .current {display: table-cell;}
 
