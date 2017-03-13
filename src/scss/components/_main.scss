@@ -221,35 +221,37 @@ h6 {
 
 .responds__list {
 	overflow: hidden;
-	height: 390px;
+	height: 380px;
 
 }
 
-@include respond(l_iphone) {.responds__list {height: 410px;}}
-@include respond(desktop)  {.responds__list {height: 370px;}}
+@include respond(l_iphone) {.responds__list {height: 400px;}}
+@include respond(l_ipad)  {.responds__list {height: 340px;}}
+@include respond(desktop)  {.responds__list {height: 320px;}}
 
 
 .responds__box {
 	float: left;
 	position: relative;
 	width: 260px;
-	height: 390px;
+	height: 1000px;
 	margin: 25px 10px; 
 	padding: 0;
 	text-align: center;
 }
 
 
-@include respond(l_iphone){.responds__box {width: 197px; height: 410px;}}
+@include respond(l_iphone){.responds__box {width: 197px;}}
 @include respond(ipad){.responds__box {width: 220px; }}
 @include respond(l_ipad){.responds__box {width: 292px; }}
-@include respond(desktop){.responds__box {width: 367px; height: 370px;}}
+@include respond(desktop){.responds__box {width: 367px;}}
 
 
 .responds__nav_l {
 		content: url(../img/arrow_l.svg);
 		position: absolute;
-		top: 0;
+		z-index: 10;
+		bottom: 0;
 		left: 0;
 	}
 
@@ -257,7 +259,8 @@ h6 {
 .responds__nav_r {
 		content: url(../img/arrow_r.svg);
 		position: absolute;
-		top: 0;
+		z-index: 10;
+		bottom: 0;
 		left: 244px;
 	}
 
@@ -270,17 +273,17 @@ h6 {
 
 
 .responds__foto {
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	margin: 0 auto;
 	border-radius: 50%;
 }
 
 .responds__img:after {
 	position: absolute;
-	top: 216px;
+	top: 165px;
 	left: 44px;
-	z-index: 100;
+	z-index: 3;
 	content: url(../img/stars.png);
 	color: red;
 }
@@ -298,7 +301,7 @@ h6 {
 	font: 27px $font_cb;
 	color: $color_blue;
 	line-height: 0.9;
-	padding: 10px 0 2px;
+	padding: 5px 0 2px;
 }
 
 .responds__work {
@@ -306,3 +309,5 @@ h6 {
 	color: $color_blue;
 	padding-bottom: 40px;
 }
+
+

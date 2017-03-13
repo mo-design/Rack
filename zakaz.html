@@ -1,0 +1,59 @@
+<head>	
+	<link rel="stylesheet" type="text/css" href="build/css/style.css">
+</head>
+
+	<div class="zakaz__window" id="zakaz">
+		<div class="zakaz__box">
+			<div class="close">x</div>
+			<div class="zakaz__top">	
+				<h1 class="zakaz__title">Оформление заказа </h1>	
+			</div>
+				
+			<div class="zakaz__wrapper">
+				<p class="zakaz__small">* Поле обязательно для заполнения</p>
+					<form action="send.php" method="post" class="zakaz__form">
+						<h2>Контактная информация</h2>
+						<table>
+								<tr>
+									<td>Имя*</td>
+									<td class="right"><input type="text" name="z_name" placeholder="Ваше имя" cols="36" required/></td>
+								</tr>
+								<tr>
+									<td>Телефон*</td>
+									<td class="right"><input type="tel" name="z_tel" pattern="2-[0-9]{3}-[0-9]{3}" placeholder="Телефон для обратной связи" required/></td>
+								</tr>
+								<tr>
+									<td>Email*</td>
+									<td class="right"><input type="email"  name="z_email" placeholder="Email для обратной связи" required/></td>
+								</tr>
+
+						</table>
+
+						<h2>Комментарий к заказу</h2>
+						<textarea  name="zakaz__text" rows="10" name="">
+						</textarea>
+						
+						<input type="checkbox" name="z_check" class="checkbox" id="checkbox"/> 
+						<label class="z_check" for="checkbox">Требуется консультация специалиста</label>
+
+						<input type="submit"  name="z_submit" class="zakaz__but" value="Отправить"/>
+
+					</form>
+
+				<h3>Вам перезвонят для уточнения заказа</h3>
+			</div>
+
+			<div class="zakaz__bottom">
+				<h4 class="zakaz__title"> Не хотите ждать? <br><span> Звоните!</span> </h4>
+				<p>(066) 200 34 37 МТС<br>(098) 611 04 77 КиевСтар</p>
+			</div>
+
+	</div>
+	<!-- Маска, которая затемняет весь экран -->
+	<div id="mask"></div>
+</div>
+
+
+
+
+

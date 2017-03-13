@@ -40,7 +40,7 @@
 
 				<div class="wrapper">
 					<h4>Реши проблему хранения вещей раз и навсегда</h4>
-					<button class="fon__but">заказать</button>
+					<a href="#zakaz" name="modal"><button class="fon__but">заказать</button></a>
 					<h1>Металлические стеллажи</h1>
 					<h5>для складских, жилых и служебных помещений</h5>
 
@@ -270,7 +270,7 @@
 
 					<picture>
 						  <source srcset="build/img/shema3.svg" media="(min-width: 1200px)">
-						  <source srcset="build/img/shema2.svg" media="(min-width: 768px)">
+						  <source srcset="build/img/shema2.svg" media="(min-width: 769px)">
 						  <img srcset="build/img/shema1.svg" alt="Схема работы">
 					</picture>
 
@@ -288,7 +288,7 @@
 			<p>(098)611 04 77 КиевСтар </p>
 
 			<div class="bardak__fon">
-				<button class="bardak__but">заказать</button>
+				<a href="#zakaz" name="modal"><button class="bardak__but">заказать</button></a>
 				<h5>Мы знаем толк в хранении вещей!</h5>
 			</div>
 				
@@ -337,6 +337,58 @@
 	</footer>
 
 
+
+<!-- Форма заказа  -->
+
+
+<div class="zakaz__window" id="zakaz">
+			<div class="zakaz__top">
+				<div class="close">X</div>
+				<h1 class="zakaz__title">Оформление заказа </h1>	
+			</div>
+				
+			<div class="zakaz__wrapper">
+				<p class="zakaz__small">* Поле обязательно для заполнения</p>
+					<form id="z_form" class="zakaz__form">
+						<h2>Контактная информация</h2>
+						<table>
+								<tr>
+									<td>Имя*</td>
+									<td class="right"><input type="text" name="z_name" placeholder="Ваше имя" cols="36" required/></td>
+								</tr>
+								<tr>
+									<td>Телефон*</td>
+									<td class="right"><input type="tel" name="z_tel" placeholder="(ххх) ххх-хх-хх" required/></td>
+								</tr>
+								<tr>
+									<td>Email*</td>
+									<td class="right"><input type="email"  name="z_email" placeholder="Email для обратной связи" required/></td>
+								</tr>
+
+						</table>
+
+						<h2>Комментарий к заказу</h2>
+						<textarea  name="zakaz__text" rows="6" name=""></textarea>
+						
+						<input type="checkbox" name="z_checkbox" class="checkbox"/> 
+						<label class="z_check" for="checkbox">Требуется консультация специалиста</label>
+
+						<input type="submit"  name="z_submit" class="zakaz__but" value="Отправить"/>
+
+					</form>
+
+				<h3>Вам перезвонят для уточнения заказа</h3>
+			</div>
+
+			<div class="zakaz__bottom">
+				<h4 class="zakaz__title"> Не хотите ждать?<br> <span> Звоните!</span> </h4>
+				<p>(066) 200 34 37 МТС<br>(098) 611 04 77 КиевСтар</p>
+			</div>
+
+	</div>
+
+
+	<div id="mask"></div>
 
 
 
