@@ -887,6 +887,16 @@ h6 {
     color: #35476f; }
   .responds ul {
     list-style: none; }
+  .responds a {
+    color: #35476f;
+    text-decoration: none; }
+    .responds a:hover {
+      color: #610534; }
+
+@media only screen and (max-width: 480px) {
+  .responds a {
+    display: inline-block;
+    width: 230px; } }
 
 .responds .wrapper {
   position: relative; }
@@ -996,6 +1006,30 @@ h6 {
 
 @media only screen and (min-width: 1201px) {
   .responds__img:after {
+    left: 95px; } }
+
+.responds__img4:after {
+  position: absolute;
+  top: 165px;
+  left: 44px;
+  z-index: 3;
+  content: url(../img/stars4.png);
+  color: red; }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .responds__img4:after {
+    left: 9px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+  .responds__img4:after {
+    left: 23px; } }
+
+@media only screen and (min-width: 981px) and (max-width: 1200px) {
+  .responds__img4:after {
+    left: 59px; } }
+
+@media only screen and (min-width: 1201px) {
+  .responds__img4:after {
     left: 95px; } }
 
 .responds__name {

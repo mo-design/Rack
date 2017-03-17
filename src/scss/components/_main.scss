@@ -213,7 +213,20 @@ h6 {
 
 	ul {list-style: none;}
 
+
+	a {
+		color: $color_blue;
+		text-decoration: none;
+
+		&:hover {color: $color_red;}
+	}
+
+
 }
+
+@include respond(iphone){.responds a {display: inline-block; width: 230px;}}
+
+
 	
 .responds .wrapper {
 	position: relative;
@@ -279,7 +292,7 @@ h6 {
 	border-radius: 50%;
 }
 
-.responds__img:after {
+.responds__img:after  {
 	position: absolute;
 	top: 165px;
 	left: 44px;
@@ -295,6 +308,20 @@ h6 {
 @include respond(desktop){.responds__img:after {left: 95px;}}
 
 
+.responds__img4:after  {
+	position: absolute;
+	top: 165px;
+	left: 44px;
+	z-index: 3;
+	content: url(../img/stars4.png);
+	color: red;
+}
+
+
+@include respond(l_iphone){.responds__img4:after {left: 9px;}}
+@include respond(ipad){.responds__img4:after { left: 23px; }}
+@include respond(l_ipad){.responds__img4:after {left: 59px;}}
+@include respond(desktop){.responds__img4:after {left: 95px;}}
 
 
 .responds__name {
