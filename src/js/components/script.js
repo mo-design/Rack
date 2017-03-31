@@ -1,13 +1,32 @@
 $(document).ready(function () {
 
 
+/*Плавный скроллинг*/
+$('a[href^="#"]').bind('click.smoothscroll',function (e) { 
+   e.preventDefault(); 
+
+   var target = this.hash, 
+   $target = $(target); 
+
+   $('html, body').stop().animate({ 
+   'scrollTop': $target.offset().top 
+   }, 1500, 'swing', function () { 
+   window.location.hash = target; 
+   }); 
+});
 
 
-$("#z_form").submit(function() { //устанавливаем событие отправки для формы с id=form
+
+/*Маска для телефона*/
+$('#z_tel').mask("+38(999) 999-99-99");
+
+
+
+$("#z_form").submit(function() { 
             var form_data = $(this).serialize(); //собераем все данные из формы
             $.ajax({
-            type: "POST", //Метод отправки
-            url: "/build/php/send.php", //путь до php фаила отправителя
+            type: "POST", 
+            url: "/build/php/send.php", 
             async: false,
             data: form_data,
             success: function(html) {
@@ -115,7 +134,6 @@ function right_carusel(carusel){
       $(carusel).find(".responds__list").css({"left":"0px"}); 
    }); 
 }
-
 
 
 

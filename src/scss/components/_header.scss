@@ -19,7 +19,7 @@
 
 
 	a, .current a{
-		padding: 0 10px;
+		padding: 0 7px;
 		text-decoration: none;
 		color: $color_white;
 		font: 12px $font;
@@ -68,6 +68,7 @@
 		background-size: fixed;
 		background-position: top;
 		text-align: center;
+		padding-bottom: 10px;
 	}
 
 
@@ -148,6 +149,9 @@ h4 {
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    transition-duration: 0.4s;
+
+    &:hover {background-color: $color_blue;}
       
 }
 

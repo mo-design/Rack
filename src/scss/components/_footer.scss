@@ -12,6 +12,9 @@ footer {
 		&:hover {color: $color_yellow;}
 	}
 
+
+	h2 {display: none;}
+
 }
 
 
@@ -141,11 +144,13 @@ footer {
 		background: $color_white;
 		height: 40px; 
 		padding-bottom: 10px 0;
+		 
+		ul {width: 728px; margin: 0 auto;}
 	}
 
 	.footer__nav li {
 		float: left; 
-		padding: 10px 34px;
+		padding: 10px 25px;
 		background: $color_white;
 
 		&:hover {background: $color_yellow;}
@@ -195,7 +200,7 @@ footer {
 		height: 40px; 
 		padding-bottom: 10px 0;
 
-		ul {width: 690px; margin: 0 auto;}
+		ul {width: 728px; margin: 0 auto;}
 
 	}
 
@@ -205,7 +210,7 @@ footer {
 
 	.footer__nav li {
 		float: left; 
-		padding: 10px 30px;
+		padding: 10px 25px;
 		background: $color_white;
 
 		&:hover {background: $color_yellow;}
@@ -257,7 +262,7 @@ footer {
 		height: 40px; 
 		padding-bottom: 10px 0;
 
-		ul {width: 690px; margin: 0 auto;}
+		ul {width: 728px; margin: 0 auto;}
 
 	}
 
@@ -267,7 +272,7 @@ footer {
 
 	.footer__nav li {
 		float: left; 
-		padding: 10px 30px;
+		padding: 10px 25px;
 		background: $color_white;
 
 		&:hover {background: $color_yellow;}

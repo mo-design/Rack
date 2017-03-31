@@ -9,6 +9,11 @@
   "author": "$OlgaMaximova <$maximova.olga@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "gulp-sass": "^3.1.0"
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.1",
+    "gulp-watch": "^4.3.11"
   }
 }

@@ -1,7 +1,7 @@
 /* pluses */
 
 	h2 {
-		margin: 10px 0;
+		margin: 40px 0 30px;
 		text-align: center;
 		font: 30px $font_i;		
 	}
@@ -11,15 +11,12 @@
 
 .pluses {
 	background: $color_red;
-
-
 	h2 {color: $color_white;}
-
 }
 
 
 .pluses .wrapper {
-	padding: 10px;
+	padding: 20px 0;
 }
 
 .pluses__box {
@@ -128,9 +125,11 @@ h3 {
 
 .product {
 	background: $color_white;
-
+	margin-top: 40px;
 	
-	h2 {color: $color_red;}
+	h2 {
+		color: $color_red;
+	}
 
 
 	p {
@@ -181,7 +180,6 @@ h6 {
 	line-height: 1;
 	}
 
-	p {font-weight: bold;}
 
 }
 
@@ -194,7 +192,8 @@ h6 {
 	&:hover { color: $color_yellow;}
 
 
-	span {padding-left: 20px; font: 14px $font_i; color: $color_black;}
+	span { padding-left: 20px; }
+	.nospace { padding-left: 0; }
 }
 
 

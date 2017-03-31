@@ -137,6 +137,10 @@ textarea {width: 100%;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    transition-duration: 0.4s;
+
+    &:hover {background-color: $color_red;}
+
       
 }
 
@@ -162,6 +166,11 @@ textarea {width: 100%;
 
 
 }
+
+
+
+
+
 
 
 
