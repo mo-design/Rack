@@ -14,6 +14,14 @@
 .shema__box {
 	width: 276px;
 	margin: 0 auto;
+
+
+	p {
+		text-align: center;
+		color: $color_white;
+		font: 12px $font;
+		padding-top: 20px;	
+	}
 }
 
 

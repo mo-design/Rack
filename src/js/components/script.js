@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+$("#flip_img1").flip();
+$("#flip_img2").flip();
+$("#flip_img3").flip();
+$("#flip_img4").flip();
+$("#flip_img5").flip();
+
+
+
 
 /*Плавный скроллинг*/
 $('a[href^="#"]').bind('click.smoothscroll',function (e) { 

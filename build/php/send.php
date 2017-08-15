@@ -1,7 +1,7 @@
 <?php
 if((isset($_POST['z_name'])&&$_POST['z_name']!="")&&(isset($_POST['z_tel'])&&$_POST['z_tel']!="")&&(isset($_POST['z_email'])&&$_POST['z_email']!="")) { 
 //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'maximova.olga@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно
+        $to = 'maximova.olga@gmail.com, donprofil.com@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно
         if ( isset($_POST['z_checkbox'])&&$_POST['z_checkbox']=='on' ) {$help = 'Нужна консультация специалиста';}
         else $help = 'Консультация специалиста не нужна';
         $subject = 'ЗАКАЗ'; //Загаловок сообщения

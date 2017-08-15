@@ -5,7 +5,7 @@
 	 y="0px" width="36px" height="31px" viewBox="0 0 36 31" enable-background="new 0 0 36 31" xml:space="preserve">
 <g id="Shape_1_copy">
 	<g>
-		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#35476F" points="35.93,0 0,15.513 35.93,31.026 29.493,15.513 		"/>
+		<polygon fill="#35476F" points="35.9,0 0,15.5 35.9,31 29.5,15.5 		"/>
 	</g>
 </g>
 </svg>

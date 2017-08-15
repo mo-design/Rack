@@ -1,6 +1,13 @@
 /* top menu */
 
 
+.up {
+	position: fixed;
+	top: 90%;
+	left: 15px;
+	z-index: 100;
+}
+
 .top {
 	background: $color_red;
 	height: 30px;
