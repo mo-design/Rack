@@ -1,0 +1,102 @@
+
+$w1: 300px;
+$w2: 480px;
+$w3: 768px;
+$w4: 980px;
+$w5: 1200px;
+
+
+
+@mixin respond($media) {
+  @if $media == iphone {
+    @media only screen and (max-width: $w2) { @content; }
+  }
+  @else if $media == l_iphone {
+    @media only screen and (min-width: $w2 + 1) and (max-width: $w3) { @content; }
+  }
+  @else if $media == ipad {
+    @media only screen and (min-width: $w3 + 1) and (max-width: $w4) { @content; }
+  }
+   @else if $media == l_ipad {
+  @media only screen and (min-width: $w4 + 1) and (max-width: $w5) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $w5 + 1) { @content; }
+  }
+}
+
+
+.wrapper {
+  width: $w1;
+  margin: 0 auto;
+}
+
+
+@include respond(l_iphone)  {.wrapper {width: $w2; margin: 0 auto;}}
+@include respond(ipad)      {.wrapper {width: $w3; margin: 0 auto;}}
+@include respond(l_ipad)    {.wrapper {width: $w4; margin: 0 auto;}}
+@include respond(desktop)   {.wrapper {width: $w5; margin: 0 auto;}}
+
+
+
+.col-1-2 {
+    float: left;
+    width: 130px;
+    margin: 10px;
+}
+
+@include respond(l_iphone) {.col-1-2{width: 220px;}}
+@include respond(ipad)     {.col-1-2{width: 364px;}}
+@include respond(l_ipad)   {.col-1-2{width: 470px;}}
+@include respond(desktop)  {.col-1-2{width: 580px;}}
+
+
+
+
+.col-1-3 {
+    float: left;
+    width: 80px;
+    margin: 10px;
+}
+
+
+
+@include respond(l_iphone) {.col-1-3{width: 140px;}}
+@include respond(ipad)     {.col-1-3{width: 236px;}}
+@include respond(l_ipad)   {.col-1-3{width: 306px;}}
+@include respond(desktop)  {.col-1-3{width: 380px;}}
+
+
+
+
+.col-2-3 {
+    float: left;
+    width: 180px;
+    margin: 10px;
+}
+
+@include respond(l_iphone) {.col-2-3{width: 300px;}}
+@include respond(ipad)     {.col-2-3{width: 492px;}}
+@include respond(l_ipad)   {.col-2-3{width: 634px;}}
+@include respond(desktop)  {.col-2-3{width: 780px;}}
+
+
+
+
+.col-1-4 {
+    float: left;
+    width: 55px;
+    margin: 10px;
+}
+
+@include respond(l_iphone) {.col-1-4{width: 100px;}}
+@include respond(ipad)     {.col-1-4{width: 172px;}}
+@include respond(l_ipad)   {.col-1-4{width: 230px;}}
+@include respond(desktop)  {.col-1-4{width: 280px;}}
+
+
+.img-1-2 img {width: 280px;}
+@include respond(l_iphone){ .img-1-2 img {width: 440px;} }
+@include respond(ipad){ .img-1-2 img {width: 350px;} }
+@include respond(l_ipad){ .img-1-2 img {width: 460px;} }
+@include respond(desktop){ .img-1-2 img {width: 569px;} }

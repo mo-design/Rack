@@ -1,0 +1,178 @@
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:100;
+    background-color:#000;
+    display:none;
+ }
+
+
+
+.zakaz__window {
+    position:fixed;
+    left:0;
+    top:10px;
+    width:320px;
+    z-index:200;
+    background: $color_white;
+    display:none;
+ }  
+
+
+ 
+
+.zakaz__top {
+	position: relative;
+	width: 100%;
+	background: $color_blue;
+	padding: 10px 0;
+
+
+	h1 {
+		color: $color_white;
+		font: 25px $font_cb;
+		text-align: center;
+	}
+}
+
+.close {
+
+		position: absolute;
+		top: 0; right: 5px;
+		font: 15px $font;
+		color: $color_white;
+		cursor: pointer;
+}
+
+
+
+.zakaz__wrapper {
+
+	width: 280px;
+	margin: 0 auto;
+
+
+
+	h3 {
+		color: $color_blue;
+		font: 15px $font_cb;
+		padding: 0;
+		text-align: center;
+
+	}
+
+}
+
+
+.zakaz__small {
+	font: 11px $font;
+	color: $color_red;
+	margin: 10px 0;
+}
+
+
+.zakaz__form {
+
+	text-align: center;
+
+	h2 {
+		font: 16px $font_i;
+		color: $color_blue;
+		text-align: right;
+		margin: 5px 0;
+	}
+
+
+}
+
+textarea {width: 100%;
+			margin-bottom: 15px;}
+
+	table {
+			border-collapse:collapse;
+			width: 100%;
+			text-align: left;
+			font: 13px $font;
+			color: $color_black;
+			line-height: 3;	
+
+			input {width: 200px;
+				margin: 0;
+				padding: 3px;
+			}
+
+			.right {text-align: right;}
+
+
+	}
+
+
+
+.zakaz__check {
+	font: 12px $font;
+	color: $color_black;
+
+}
+
+		
+   .checkbox {
+  vertical-align: bottom;
+  margin: 0 3px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+.zakaz__but {
+	width: 140px;
+	display: inline-block;
+	margin: 20px 0 10px;
+	padding: 3px 0;
+	border-radius: 8px;
+    border: none;
+    background-color: $color_blue;
+    color: white;
+   	font: 25px $font_cb;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+
+    &:hover {background-color: $color_red;}
+
+      
+}
+
+
+.zakaz__bottom {
+	background: $color_red;
+	margin-top: 10px;
+	padding: 5px 0 10px;
+	
+	text-align: center;
+
+	h4 {
+		color: $color_white;
+		font: 25px $font_bl;
+		text-align: center;
+		
+
+		span {color: $color_yellow;}
+	}
+
+
+	p {font: 16px $font; color: $color_white;}
+
+	.zakaz__workOurs {font: 12px $font; color: $color_white;}
+
+}
+
+
+
+
+
+
+
+

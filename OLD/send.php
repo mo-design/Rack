@@ -54,7 +54,7 @@ if((isset($_POST['z_name'])&&$_POST['z_name']!="")&&(isset($_POST['z_tel'])&&$_P
 
 
         if ($result) 
-        	echo "true";
+        	echo "Ваше сообщение отправлено!";
         else
         	echo "Не удалось отправить сообщение!";
 } else {

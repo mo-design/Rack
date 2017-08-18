@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,7 +79,7 @@
 
 				<div class="wrapper">
 					<h4>Реши проблему хранения вещей раз и навсегда</h4>
-					<a href="#zakaz" name="modal"><button class="fon__but">заказать</button></a>
+					<button class="fon__but" id="call">заказать</button>
 					<h1>Металлические стеллажи</h1>
 					<h5>для складских, жилых и служебных помещений</h5>
 
@@ -195,14 +195,19 @@
 
 
 			</div>
-			<div class="wrapper sizes  clearfix"  id="a_prices">
-				
+			<div class="wrapper clearfix"  id="a_prices">
+
 					<h2>Цены</h2>
 					<p>Ниже указаны цены на металлические стеллажи стандартных размеров.
 					Размеры - высота*ширина*глубина - в миллиметрах. Вес - макимально допустимый на одну полку.  Материал покрытия - оцинкованная сталь 0,6 мм. Производитель - собственное производство в городе Харьков.
 					</p>
 
-						
+					<div class="sizes">
+
+			
+					
+
+
 						<div class="product__box">
 							<div id="flip_img1">
 							  	<div class="front"> 
@@ -219,7 +224,7 @@
 							<p class="sizes__p">1500*900*400мм<span>80кг</span><span>695грн</span></p>
 						</div>
 
-					<div itemscope itemtype="http://schema.org/Product">
+						<div itemscope itemtype="http://schema.org/Product">
 						
 						<div class="product__box">
 							<div id="flip_img2">
@@ -244,7 +249,7 @@
 							</div>
 						</div>
 
-					</div>  <!-- shema.org  -->
+						</div>   
 
 						<div class="product__box">
 
@@ -298,258 +303,358 @@
 							&nbsp;&nbsp;860грн</span></p>
 							<p class="sizes__p">2000*1250*500мм<span>100кг</span><span>1150грн</span></p>
 						</div>
+           		</div>
 
-			</div>
-
+			</div>  
 
 		</section>
 
 
 		<section class="responds" id="a_responds">
 
-				<h2>Отзывы</h2>
+			<h2>Отзывы</h2>
 
-				<div class="wrapper clearfix" id="slider">
+			<div class="wrapper clearfix" id="slider">
 
-				<div class="responds__nav_l"></div>
-				<div class="responds__nav_r"></div>
 
 
-				<ul class="responds__list">
+				 <div class="responds__slider clearfix">
+  		
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava11.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Дмитрий</p>
-						<p class="responds__work">Киев</p>
-						<p>Нужен был черный матовый стеллаж для фотостудии, обыскал пол Украины, нашел в Харькове. Через неделю стеллаж радовал глаз, даже болты покрасили)). Спасибо за индивидуальный подход! Буду советовать своим киевским коллегам.</p>
-					</li>
 
+  				      	<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Оксана</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Заказывала стеллажи для кондитерского цеха из пищевой нержавейки. Очень удобно моются. Благодарю за хорошую работу! 
+		      				</p>
+		      	  		</div>
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava1.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Иван</p>
-						<p class="responds__work">Харьков</p>
-						<p>Нормально сработали, мне понравилось. Быстро приняли заказ, посоветовали с размерами, быстро просчитали. Приятно было сотрудничать.</p>
-					</li>
 
 
-				<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Евгений</p>
-						<p class="responds__work">Харьков</p>
-						<p>Брал под склад 10 штук с усиленными полками. Получил, что хотел, качество приятно удивило, правда пришлось немного подождать. </p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava11.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Дмитрий</p>
+		      				<p class="responds__city">Киев</p>
+		      				<p>Нужен был черный матовый стеллаж для фотостудии, обыскал пол Украины, нашел в Харькове. Через неделю стеллаж радовал глаз, даже болты покрасили)). Спасибо за индивидуальный подход! Буду советовать своим киевским коллегам. 
+		      				</p>
+		      	  		</div>
 
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava2.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Владимир</p>
-						<p class="responds__work">Дергачи</p>
-						<p>Все устроило, особенно порадовала оперативная доставка в Дергачи. Рекомендую.</p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava1.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Иван</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Нормально сработали, мне понравилось. Быстро приняли заказ, посоветовали с размерами, быстро просчитали. Приятно было сотрудничать.</p>
+		      	  		</div>
 
 
-					<li class="responds__box">
-						<div class="responds__img4"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Сергей</p>
-						<p class="responds__work">Харьков</p>
-						<p>Вроде бы все в поряде, можно заказывать.</p>
-					</li>
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Екатерина</p>
-						<p class="responds__work">Херсон</p>
-						<p>Заказала стеллажи для архивов с ограничителями и разделителями для папок. Приятно, что парни вникли в проблему и сделалали под под заказ именно то, что я хотела.</p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Евгений</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Брал под склад 10 штук с усиленными полками. Получил, что хотел, качество приятно удивило, правда пришлось немного подождать.</p>
+		      	  		</div>
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava3.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Сергей</p>
-						<p class="responds__work">Циркуны</p>
-						<p>С этой компанией я сотрудничаю давно, но стеллажи брал впервые. Ребята как всегда на высоте, вопросов не возникло.</p>
-					</li>
 
 
 
-	
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava4.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Дмитрий</p>
-						<p class="responds__work">Харьков</p>
-						<p>Заказывал четырехполочный сталлаж для склада. Работой и обслужеванием доволен, планирую заказать второй. Всем рекомендую.</p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava2.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Владимир</p>
+		      				<p class="responds__city">Дергачи</p>
+		      				<p>Все устроило, особенно порадовала оперативная доставка в Дергачи. Рекомендую.</p>
+		      	  		</div>
 
 
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img4">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Сергей</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Вроде бы все в поряде, можно заказывать.</p>
+		      	  		</div>
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava5.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Ирина</p>
-						<p class="responds__work">Харьков</p>
-						<p>Все отлично, стелаж вместительный и крепкий, легко собирается. </p>
-					</li>
 
-					<li class="responds__box">
-						<div class="responds__img4"><img src="build/img/responds/ava7.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Виталий</p>
-						<p class="responds__work">Харьков</p>
-						<p>Спасибо, закажу еще! </p>
-					</li>
-					
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img4">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Екатерина</p>
+		      				<p class="responds__city">Херсон</p>
+		      				<p>Заказала стеллажи для архивов с ограничителями и разделителями для папок. Приятно, что парни вникли в проблему и сделалали под под заказ именно то, что я хотела.</p>
+		      	  		</div>
 
-					<li class="responds__box">
-						<div class="responds__img4"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Михаил</p>
-						<p class="responds__work">Лубны</p>
-						<p>Все норм. </p>
-					</li>
 
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava8.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Иван</p>
-						<p class="responds__work">Песочин</p>
-						<p>Спасибо огромное! Очень полезная вещь в хозяйстве, рекомендую всем. </p>
-					</li>
-
-
-
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava6.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Светлана </p>
-						<p class="responds__work">Киев</p>
-						<p>Очень гармонично вписался на лоджию, я в восторге! Завтра буду заполнять! </p>
-					</li>
-
-					<li class="responds__box">
-						<div class="responds__img4"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Роман </p>
-						<p class="responds__work">Киев</p>
-						<p>Нормальный стеллаж. Пойдет. </p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava3.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Сергей</p>
+		      				<p class="responds__city">Циркуны</p>
+		      				<p>С этой компанией я сотрудничаю давно, но стеллажи брал впервые. Ребята как всегда на высоте, вопросов не возникло.</p>
+		      	  		</div>
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Денис </p>
-						<p class="responds__work">Полтава</p>
-						<p>Все устроило Зачет. </p>
-					</li>
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava10.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Владимир</p>
-						<p class="responds__work">Киев</p>
-						<p></p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava4.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Дмитрий</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Заказывал четырехполочный сталлаж для склада. Работой и обслужеванием доволен, планирую заказать второй. Всем рекомендую.</p>
+		      	  		</div>
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava14.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Юрий</p>
-						<p class="responds__work">Днепр</p>
-						<p>Взял стеллаж для гаража. Пацаны за базар отвечают.</p>
-					</li>
 
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava5.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Ирина</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Все отлично, стелаж вместительный и крепкий, легко собирается.</p>
+		      	  		</div>
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Андрей </p>
-						<p class="responds__work">Глобино</p>
-						<p></p>
-					</li>
 
-				<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Антон</p>
-						<p class="responds__work">Зеньков</p>
-						<p>Спасибо! Жена довольна больше всех )))</p>
-					</li>
 
-					<li class="responds__box">
-						<div class="responds__img4"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Михаил</p>
-						<p class="responds__work">Днепр</p>
-						<p></p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img4">
+		      	  				<img src="build/img/responds/ava7.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Виталий</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Спасибо, закажу еще!</p>
+		      	  		</div>
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava9.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Николай </p>
-						<p class="responds__work">Харьков</p>
-						<p> </p>
-					</li>
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Игорь</p>
-						<p class="responds__work">Карловка</p>
-						<p>Заказывал под склад. То что надо.</p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img4">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Михаил</p>
+		      				<p class="responds__city">Лубны</p>
+		      				<p>Все норм.</p>
+		      	  		</div>
 
 
-					<li class="responds__box">
-						<div class="responds__img4"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Никита</p>
-						<p class="responds__work">Харьков</p>
-						<p>Заказал стеллаж на балкон. На вид очень прочный. Помотрим. </p>
-					</li>
 
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava8.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Иван</p>
+		      				<p class="responds__city">Песочин</p>
+		      				<p>Спасибо огромное! Очень полезная вещь в хозяйстве, рекомендую всем.</p>
+		      	  		</div>
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Дмитрий</p>
-						<p class="responds__work">Кривой Рог</p>
-						<p> </p>
-					</li>
 
 
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava6.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Светлана</p>
+		      				<p class="responds__city">Киев</p>
+		      				<p>Очень гармонично вписался на лоджию, я в восторге! Завтра буду заполнять!</p>
+		      	  		</div>
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava12.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Алексей</p>
-						<p class="responds__work">Черкассы</p>
-						<p>Взяли стеллажи для СТО, поменяли перфорированное фуфло на нормальные, взяли 6 штук с усиленными полками соединили в блок болтами. Загрузили все барахло, теперь не штормит как раньше. Особенно понравились толстые полки. </p>
-					</li>
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava13.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Галина</p>
-						<p class="responds__work">Кировоград</p>
-						<p>Месяц назад брала стеллаж для балкона, понравился, надежный. Сейчас заказала нестандартный в подвал для соленьев и банок. Сделали на совесть.</p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img4">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Роман</p>
+		      				<p class="responds__city">Киев</p>
+		      				<p>Нормальный стеллаж. Пойдет.</p>
+		      	  		</div>
 
 
 
-					<li class="responds__box">
-						<div class="responds__img4"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Андрей</p>
-						<p class="responds__work">Харьков</p>
-						<p>Стеллаж отличный, но долго ждал звонка. Поэтому только 4.</p>
-					</li>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Денис</p>
+		      				<p class="responds__city">Полтава</p>
+		      				<p>Все устроило Зачет. </p>
+		      	  		</div>
 
 
-					<li class="responds__box">
-						<div class="responds__img"><img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах"></div>
-						<p class="responds__name">Владислав</p>
-						<p class="responds__work">Запорожье</p>
-						<p>Пойдет, прочный. </p>
-					</li>
 
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava10.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Владимир</p>
+		      				<p class="responds__city">Киев</p>
+		      				<p></p>
+		      	  		</div>
 
 
-				</ul>
-				<a href="http://kharkov.prom.ua/opinions/list/93154" target="a_blank"> Добавить свой отзыв </a>
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava14.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Юрий</p>
+		      				<p class="responds__city">Днепр</p>
+		      				<p>Взял стеллаж для гаража. Пацаны за базар отвечают.</p>
+		      	  		</div>
 
-		</section>
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Андрей</p>
+		      				<p class="responds__city">Глобино</p>
+		      				<p></p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Антон</p>
+		      				<p class="responds__city">Зеньков</p>
+		      				<p>Спасибо! Жена довольна больше всех )))</p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img4">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Михаил</p>
+		      				<p class="responds__city">Днепр</p>
+		      				<p></p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava9.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Николай</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p></p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Игорь</p>
+		      				<p class="responds__city">Карловка</p>
+		      				<p>Заказывал под склад. То что надо.</p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img4">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Никита</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Заказал стеллаж на балкон. На вид очень прочный. Помотрим.</p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Дмитрий</p>
+		      				<p class="responds__city">Кривой Рог</p>
+		      				<p> </p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava12.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Алексей</p>
+		      				<p class="responds__city">Черкассы</p>
+		      				<p>Взяли стеллажи для СТО, поменяли перфорированное фуфло на нормальные, взяли 6 штук с усиленными полками соединили в блок болтами. Загрузили все барахло, теперь не штормит как раньше. Особенно понравились толстые полки. </p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava13.jpg" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Галина</p>
+		      				<p class="responds__city">Кировоград</p>
+		      				<p>Месяц назад брала стеллаж для балкона, понравился, надежный. Сейчас заказала нестандартный в подвал для соленьев и банок. Сделали на совесть. </p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img4">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Андрей</p>
+		      				<p class="responds__city">Харьков</p>
+		      				<p>Стеллаж отличный, но долго ждал звонка. Поэтому только 4. </p>
+		      	  		</div>
+
+
+
+		      	  		<div class="responds__box">
+		      	  			<div class="responds__img">
+		      	  				<img src="build/img/responds/ava.png" class="responds__foto" alt="Отзывы о металлических стеллажах">
+		      	  			</div>
+		      	  			<p class="responds__name">Владислав</p>
+		      				<p class="responds__city">Запорожье</p>
+		      				<p>Пойдет, прочный.</p>
+		      	  		</div>
+
+
+
+
+  				</div>
+
+  				<a href="https://kharkov.prom.ua/opinions/list/93154" target="_blank">Оставить свой отзыв</a>
+
+  			</div>
+
+  		</section>
+
+
 
 
 	</main>
@@ -581,7 +686,7 @@
 			<p>(098)611 04 77 КиевСтар </p>
 
 			<div class="bardak__fon">
-				<a href="#zakaz" name="modal"><button class="bardak__but">заказать</button></a>
+				<button class="bardak__but" id="bardak__call">заказать</button>
 				<h5>Мы знаем толк в хранении вещей!</h5>
 			</div>
 				
@@ -640,18 +745,20 @@
 
 
 
-<!-- Форма заказа  -->
+<!-- Новая форма заказа  -->
 
 
-<div class="zakaz__window" id="zakaz">
-			<div class="zakaz__top">
-				<div class="close">X</div>
-				<h1 class="zakaz__title">Оформление заказа </h1>	
-			</div>
-				
-			<div class="zakaz__wrapper">
-				<p class="zakaz__small">* Поле обязательно для заполнения</p>
-					<form id="z_form" class="zakaz__form" onsubmit="_gaq.push(['_trackEvent', 'zButton','zForm']);return true;">
+<div class="win__overlay" id="winzakaz">
+
+    <div class="win__wrapper">
+    	<div class="win__top">
+			<div class="win__close">X</div>
+			<h5>Оформление заказа</h5>	
+		</div>
+    	<div class="winzakaz__box">
+			<p class="zakaz__small">* Поле обязательно для заполнения</p>
+    		<form id="winzakaz_form" class="zakaz__form">
+
 						<h2>Контактная информация</h2>
 						<table>
 								<tr>
@@ -675,25 +782,37 @@
 						<input type="checkbox" name="z_checkbox" class="checkbox"/> 
 						<label class="z_check" for="checkbox">Требуется консультация специалиста</label>
 
-						<input type="submit"  name="z_submit" class="zakaz__but" value="Отправить"/>
+						<div><input type="submit"  name="z_submit" class="zakaz__but" value="Отправить"/></div>
 
-					</form>
+			</form>
 
-				<h3>Вам перезвонят для уточнения заказа</h3>
-			</div>
+    	 	<h3>Вам перезвонят для уточнения заказа</h3>
+		</div>
 
-			<div class="zakaz__bottom">
-				<h4 class="zakaz__title"> Не хотите ждать?<br> <span> Звоните!</span> </h4>
-				<p>(066) 200 34 37 МТС<br>(098) 611 04 77 КиевСтар</p>
-				<p class="zakaz__workOurs">по будням с 9 до 17</p>
-			</div>
+		<div class="zakaz__bottom">
+			<h4 class="zakaz__title"> Не хотите ждать?<br> <span> Звоните!</span> </h4>
+			<p>(066) 200 34 37 МТС<br>(098) 611 04 77 КиевСтар</p>
+			<p class="zakaz__workOurs">по будням с 9 до 17</p>
+		</div>
 
-	</div>
-
-
-	<div id="mask"></div>
+    </div>
+</div>
 
 
+
+<!--  Send mail POPUP   -->
+<div class="win__overlay" id="winsendmail">
+    <div class="winsend__wrapper">
+    	<div class="win__top">
+			<div class="win__close">X</div>
+			<h5>Заказ принят</h5>	
+		</div>
+    	<div class="winzakaz__box">
+    	   		<p>Ваш заказ принят! Наш менеджер свяжется с Вами в ближайшее время.</p>
+    			<input type="button" class="zakaz__but win__ok" value="Закрыть">
+    	</div>
+    </div>
+</div>
 
 
 

@@ -1,122 +1,118 @@
-#mask {
-    position:absolute;
-    left:0;
-    top:0;
-    z-index:100;
-    background-color:#000;
-    display:none;
- }
+.win__overlay,
+ {
+    display: none;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    z-index: 1000;
+    background: rgba(0,0,0,.7);
+  }
+
+.win__overlay::before,
+ {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
 
 
 
-.zakaz__window {
-    position:fixed;
-    left:0;
-    top:10px;
-    width:320px;
-    z-index:200;
-    background: $color_white;
-    display:none;
- }  
+
+.win__wrapper, .winsend__wrapper  {
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2000;
+  }
 
 
- 
+.win__top {
+  margin: 0 0 10px;
+  padding: 5px;
+  position: relative;
+  background: $color_red;
+  
 
-.zakaz__top {
-	position: relative;
-	width: 100%;
-	background: $color_blue;
-	padding: 10px 0;
-
-
-	h1 {
-		color: $color_white;
-		font: 25px $font_cb;
-		text-align: center;
-	}
+  h5 {  color: $color_white;
+        font: 25px $font_cb;
+        text-align: center;}
 }
 
-.close {
-
-		position: absolute;
-		top: 0; right: 5px;
-		font: 15px $font;
-		color: $color_white;
-		cursor: pointer;
+.win__close {
+    position: absolute; 
+    top: 5px; 
+    right: 5px; 
+    cursor: pointer; 
+    color: $color_white;
 }
 
+.winzakaz__box {
 
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 10px;
 
-.zakaz__wrapper {
+        h3 {
+        color: $color_blue;
+        font: 15px $font_cb;
+        padding: 0;
+        text-align: center;
 
-	width: 280px;
-	margin: 0 auto;
-
-
-
-	h3 {
-		color: $color_blue;
-		font: 15px $font_cb;
-		padding: 0;
-		text-align: center;
-
-	}
-
+    }
 }
 
-
-.zakaz__small {
-	font: 11px $font;
-	color: $color_red;
-	margin: 10px 0;
-}
 
 
 .zakaz__form {
 
-	text-align: center;
+    text-align: center;
 
-	h2 {
-		font: 16px $font_i;
-		color: $color_blue;
-		text-align: right;
-		margin: 5px 0;
-	}
+    h2 {
+        font: 16px $font_i;
+        color: $color_blue;
+        text-align: right;
+        margin: 5px 0;
+    }
 
 
 }
 
+
 textarea {width: 100%;
-			margin-bottom: 15px;}
+            margin-bottom: 15px;}
 
-	table {
-			border-collapse:collapse;
-			width: 100%;
-			text-align: left;
-			font: 13px $font;
-			color: $color_black;
-			line-height: 3;	
+    table {
+            border-collapse:collapse;
+            width: 100%;
+            text-align: left;
+            font: 13px $font;
+            color: $color_black;
+            line-height: 3; 
 
-			input {width: 200px;
-				margin: 0;
-				padding: 3px;
-			}
+            input {width: 200px;
+                margin: 0;
+                padding: 3px;
+            }
 
-			.right {text-align: right;}
+            .right {text-align: right;}
 
 
-	}
-
+    }
 
 
 .zakaz__check {
-	font: 12px $font;
-	color: $color_black;
+    font: 12px $font;
+    color: $color_black;
 
 }
 
-		
-   .checkbox {
+        
+.checkbox {
   vertical-align: bottom;
   margin: 0 3px 0 0;
   width: 16px;
@@ -124,17 +120,16 @@ textarea {width: 100%;
 }
 
 
-
 .zakaz__but {
-	width: 140px;
-	display: inline-block;
-	margin: 20px 0 10px;
-	padding: 3px 0;
-	border-radius: 8px;
+    width: 140px;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 3px 0;
+    border-radius: 8px;
     border: none;
     background-color: $color_blue;
     color: white;
-   	font: 25px $font_cb;
+    font: 25px $font_cb;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -147,32 +142,32 @@ textarea {width: 100%;
 
 
 .zakaz__bottom {
-	background: $color_red;
-	margin-top: 10px;
-	padding: 5px 0 10px;
-	
-	text-align: center;
+    background: $color_red;
+    margin-top: 10px;
+    padding: 5px 0 10px;
+    
+    text-align: center;
 
-	h4 {
-		color: $color_white;
-		font: 25px $font_bl;
-		text-align: center;
-		
+    h4 {
+        color: $color_white;
+        font: 25px $font_bl;
+        text-align: center;
+        
 
-		span {color: $color_yellow;}
-	}
+        span {color: $color_yellow;}
+    }
 
 
-	p {font: 16px $font; color: $color_white;}
+    p {font: 16px $font; color: $color_white;}
 
-	.zakaz__workOurs {font: 12px $font; color: $color_white;}
+    .zakaz__workOurs {font: 12px $font; color: $color_white;}
 
 }
 
 
-
-
-
-
-
-
+.zakaz__small {
+    text-align: left;
+    font: 11px $font;
+    color: $color_red;
+    margin: 10px 0;
+}

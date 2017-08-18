@@ -30,118 +30,130 @@ $('#z_tel').mask("+38(999) 999-99-99");
 
 
 
-$("#z_form").submit(function() { 
-            var form_data = $(this).serialize(); //собераем все данные из формы
-            $.ajax({
-            type: "POST", 
-            url: "/build/php/send.php", 
+
+/*  SLIDER  */
+
+
+
+$('.responds__slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+  ]
+}); 
+
+
+
+
+
+
+//Modal window call
+
+    $('#call').click(function(){
+       $('#winzakaz').show(500);
+    });
+
+
+    $('#bardak__call').click(function(){
+       $('#winzakaz').show(500);
+    });
+
+
+
+    $('#winzakaz .win__close').click(function(){
+       $('#winzakaz').hide(500);
+
+    });
+
+
+    $("#winzakaz").click(function(e) {
+
+        if($(e.target).closest("#winzakaz .win__wrapper").length==0) {
+             $("#winzakaz").hide(500);
+        } 
+
+    });
+    
+
+
+
+   $("#winsendmail .win__close").click(function(){
+        $("#winsendmail").hide(500);
+    });
+    
+    $("#winsendmail .win__ok").click(function(){
+        $("#winsendmail").hide(500);
+    });
+       
+    $("#winsendmail").click(function(e) {
+        if($(e.target).closest("#winsendmail .winsend__wrapper").length==0) {
+             $("#winsendmail").hide(500);
+        } 
+    });
+ 
+
+
+
+
+
+
+
+
+
+
+    $('#winzakaz_form').submit(function() {
+        var form_data = $(this).serialize(); //собираем все данные из формы
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "/build/php/send.php", //путь до php файла отправителя
             async: false,
             data: form_data,
             success: function(html) {
-                   //код в этом блоке выполняется при успешной отработке php-скрипта
-                   alert(html);
-                  },
+                //код в этом блоке выполняется при успешной отработке php-скрипта
+                if (html == 'true') {
+                    $('#winsendmail .win__header').html('Запрос отправлен');
+                    $('#winsendmail .win__text').html('Ваш запрос на обратный звонок отправлен! Наш менеджер свяжется с Вами в указанное время.');
+                    $('#winsendmail .win__newcalc').hide();
+                    $('#winzakaz').hide();
+                    $('#winsendmail').show();
+                } else {
+                    alert('Ошибка отправки сообщения: ' + html);
+                }
+            },
             error: function(html){
-                  console.log("form_data", form_data);
-                  alert('error!');
-
-                  }
-            });
-
-
-});
-
+                console.log("form_data", form_data);
+                alert('error!');
+            }
+        });
+    
+        return false;
+    });
 
 
 
 
-
-
-
-
-
-  
-   $('a[name=modal]').click(function(e) {
  
-      e.preventDefault();
  
-      var id = $(this).attr('href');
-   
-      var maskHeight = $(document).height();
-      var maskWidth = $(document).width();
-
-
-      $('#mask').css({'width':maskWidth*2,'height':maskHeight});
-         
-      $('#mask').fadeIn(700);   
-      $('#mask').fadeTo("slow",0.9);   
-   
-      //Get the window height and width
-      
-      var winW = $(window).width();
-
-         
-      $(id).css('top',  0);
-      $(id).css('left', winW/2-$(id).width()/2);
-   
-      $(id).fadeIn(2000); 
-   
-   });
-   
-   //if close button is clicked
-   $('.close').click(function (e) {
-      //Cancel the link behavior
-      e.preventDefault();
-      $('#mask, .zakaz__window').hide();
-   });      
-   
-   //if mask is clicked
-   $('#mask').click(function () {
-      $(this).hide();
-      $('.zakaz__window').hide();
-   });         
- 
-
-
-
-
-
-
-
-
-//Обработка клика на стрелку вправо
-$(document).on('click', ".responds__nav_r",function(){ 
-	var carusel = $("#slider");
-	right_carusel(carusel);
-	return false;
-});
-//Обработка клика на стрелку влево
-$(document).on('click',".responds__nav_l",function(){ 
-	var carusel = $("#slider");
-	left_carusel(carusel);
-	return false;
-});
-
-
-
-function left_carusel(carusel){
-   var block_width = $(carusel).find('.responds__list').outerWidth();
-   $(carusel).find(".responds__list .responds__box").eq(-1).clone().prependTo($(carusel).find(".responds__list")); 
-   $(carusel).find(".responds__list").css({"left":"-"+block_width+"px"});
-   $(carusel).find(".responds__list .responds__box").eq(-1).remove();    
-   $(carusel).find(".responds__list").animate({left: "0px"}, 200); 
-   
-}
-
-
-function right_carusel(carusel){
-   var block_width = $(carusel).find('.responds__list').outerWidth();
-   $(carusel).find(".responds__list").animate({left: "-"+ block_width +"px"}, 200, function(){
-	  $(carusel).find(".responds__list .responds__box").eq(0).clone().appendTo($(carusel).find(".responds__list")); 
-      $(carusel).find(".responds__list .responds__box").eq(0).remove(); 
-      $(carusel).find(".responds__list").css({"left":"0px"}); 
-   }); 
-}
 
 
 
